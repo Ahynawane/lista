@@ -7,11 +7,14 @@
 </head>
 <body>
     <script>
-        let aluno1 = prompt("informe a nota do primeiro aluno")
-        let aluno2 = prompt("informe a nota do segundo aluno")
-        let aluno3 = prompt("informe a nota do terceiro aluno")
-        let notas = []
-        document.write(notas.includes(aluno1, aluno2, aluno3))
+       let notas = []
+
+       for (let i=0; i<10; i++){
+        let nota = Number(prompt(`digite a nota do aluno entre 0 e 10 ${i+1}`))
+        notas.push(nota)
+       }
+
+       document.write("notas dos alunos ", notas)
     </script>
 </body>
 </html>

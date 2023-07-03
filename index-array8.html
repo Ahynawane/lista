@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array 8</title>
+</head>
+
+<body>
+    <script>
+        let vendas1 = []
+        let vendas2 = []
+
+        /*let soma1 = 0
+        let soma2 = 0*/
+        for (i = 0; i < 12; i++) {
+            let venda = Number(prompt(`informe o valor do mês ${i + 1} do ano de 2021`))
+            vendas1.push(venda)
+            //soma1 += venda
+
+        }
+        for (i = 0; i < 12; i++) {
+            let venda = Number(prompt(`informe o valor do mês ${i + 1} do ano de 2022`))
+            vendas2.push(venda)
+            //soma2 += venda
+
+        }
+
+        let soma = []
+        document.write("soma mês a mês das vendas:");
+        for (let i = 0; i < 12; i++) {
+            let total = vendas1[i] + vendas2[i]
+            soma.push(total)
+        }
+
+        for (let i = 0; i < 12; i++) {
+            document.write(`mês ${i + 1}: ${soma[i]}<br>`);
+        }
+        document.write(`o resultado da soma das vendas dos ano de 2021 é ${soma[0]}<br>`)
+        document.write(`o resultado da soma das vendas do ano de 2022 é ${soma[1]}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array 7</title>
+</head>
+
+<body>
+    <script>
+        let notas = []
+        let soma = 0
+        for (let i = 0; i < 10; i++) {
+            let nota = Number(prompt(`digite a nota do aluno entre 0 e 10 ${i + 1}`))
+            notas.push(nota)
+            soma += nota
+        }
+        let media = soma / notas.length
+        document.write("notas dos alunos ", notas, "<br>")
+        document.write("média das notas ", media)
+
+
+
+    </script>
+</body>
+
+</html>
